@@ -3,7 +3,7 @@
 ![Node](https://img.shields.io/badge/node-%3E%3D22.0.0-green.svg)
 
 - **Hosted API**: [weatherapi-trt0.onrender.com](https://weatherapi-trt0.onrender.com/)
-- **Swagger (please use HTTPS scheme on remote server)**: [weatherapi-trt0.onrender.com/docs](https://weatherapi-trt0.onrender.com/docs)
+- **Swagger**: [weatherapi-trt0.onrender.com/docs](https://weatherapi-trt0.onrender.com/docs)
 - **Example Request**: [weatherapi-trt0.onrender.com/api/weather?city=Rivne](https://weatherapi-trt0.onrender.com/api/weather?city=Rivne)
 
 - **Demo HTML Page**: [vladpohorilets.github.io/WeatherFrontend/](https://vladpohorilets.github.io/WeatherFrontend/)
