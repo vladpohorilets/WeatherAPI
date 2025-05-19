@@ -1,7 +1,6 @@
 const {Subscription, Frequency} = require('../database/models');
 const {fetchForecast} = require('./forecast-fetch');
 const {sendTemplateLetter} = require('./sender');
-const baseURL = require("../utils/base-url");
 const {getWeatherCardClass} = require("./get-weather-card");
 
 const INTERVALS = {
@@ -95,7 +94,7 @@ const sendForecasts = async (subscriptions) => {
                 templateVars: {
                     city: sub.city,
                     forecast: formattedForecast,
-                    unsubscribeUrl: `${baseURL}/api/unsubscribe/${sub.verificationToken}`,
+                    unsubscribeUrl: `${process.env.URL}/api/unsubscribe/${sub.verificationToken}`,
                 },
             });
         } catch (err) {

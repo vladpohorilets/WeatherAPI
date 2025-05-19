@@ -5,8 +5,8 @@ const Frequency = require("../database/models/frequency")(sequelize, require("se
 const Subscription = require("../database/models/subscription")(sequelize, require("sequelize").DataTypes);
 const {getWeather} = require("./weather-services");
 const {sendTemplateLetter} = require("../email-utils/sender");
-const baseURL = require("../utils/base-url");
 
+const baseURL = process.env.URL;
 
 const subscribe = async (email, city, frequency) => {
     try {
